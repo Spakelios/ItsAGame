@@ -26,8 +26,6 @@ public class shoot : MonoBehaviour
             targetPosition = Camera.main.ScreenToWorldPoint(new Vector3(targetPosition.x, targetPosition.y, 0.0f));
         }
 
-        // this.transform.position = Vector2.MoveTowards(this.transform.position, targetPosition, speed * Time.deltaTime);
-
         if (Input.GetMouseButtonDown(0))
         {
             Instantiate(ProjectilePrefab, launchOffset.position, transform.rotation);
