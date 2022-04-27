@@ -3,11 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyCheck : MonoBehaviour
+public class FriendlyCollider : MonoBehaviour
 {
     public GameObject gun;
     public bool enemySpotted;
     public GameObject angry;
+    public HealthPack hpPack;
+    public PlayerStats playerStats;
+    
 
     private void Start()
     {
@@ -15,6 +18,7 @@ public class EnemyCheck : MonoBehaviour
         enemySpotted = false;
         angry.SetActive(false);
     }
+    
 
     private void OnTriggerStay(Collider other)
     {
@@ -23,7 +27,13 @@ public class EnemyCheck : MonoBehaviour
             gun.SetActive(true);
             angry.SetActive(true);
             enemySpotted = true;
-
+        }
+        
+        else if (other.gameObject.CompareTag("Player") && hpPack.packGot)
+        {
+            playerStats.hp += 1;
+            hpPack.packGot = false;
+            hpPack.healthPack.SetActive(false); 
         }
     }
 
