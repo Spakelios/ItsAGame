@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -11,6 +12,12 @@ public class PlayerStats : MonoBehaviour
     {
         hpCount.text = "HP: " + hp;
     }
-    
-    
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("ball"))
+        {
+            hp -= 1;
+        }
+    }
 }
