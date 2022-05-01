@@ -3,19 +3,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.PlayerLoop;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 
 public class atmousepoint : MonoBehaviour
 {
     public RawImage image;
+    public Transform playerPos;
     void Start()
     {
-        image.transform.position = Input.mousePosition;
+        image.transform.position = playerPos.position;
     }
 
     private void Update()
     {
-        image.transform.position = Input.mousePosition;
+        image.transform.position = playerPos.position;
     }
 }

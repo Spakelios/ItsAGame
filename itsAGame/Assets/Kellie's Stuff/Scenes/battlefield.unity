@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: f704ff5cdd9d7ec4daf0fc2a0437f157, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: 772e9322ef3b5be4fb98337b669750d5, type: 2}
 --- !u!1 &52086924 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4901592279661251363, guid: 0e927e6c2b624ad4592e8f60d2e4383b, type: 3}
@@ -556,7 +556,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 1767449651834845337, guid: 6053e30fb93644749ac0c627a93bd156, type: 3}
-  spawnDelay: 1
+  spawnDelay: 0.1
 --- !u!4 &484495227
 Transform:
   m_ObjectHideFlags: 0
@@ -1966,6 +1966,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 1985250684}
+  playerPos: {fileID: 258125790}
 --- !u!114 &1985250684
 MonoBehaviour:
   m_ObjectHideFlags: 0
