@@ -10,6 +10,8 @@ public class friendGun : MonoBehaviour
     public Transform launchOffset;
 
     public GameObject bullet;
+    
+    
     // Start is called before the first frame update
     private void OnTriggerEnter(Collider other)
     {

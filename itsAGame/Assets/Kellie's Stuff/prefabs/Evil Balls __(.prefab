@@ -156,8 +156,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13bfbb0a96cca1c438badb8435479d29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  whatIsPlayer:
+    serializedVersion: 2
+    m_Bits: 1
+  launchOffset: {fileID: 4259473240561160293}
+  attackRange: 15
+  playerInSightRange: 0
+  playerInAttackRange: 0
   Exit: {x: 32.56, y: 3.75, z: 277.2}
   Agent: {fileID: 780243428667188758}
+  timeBetweenAttacks: 2
+  projectile: {fileID: 8793547123078645721, guid: 0f24245e250fae241a1aca04573d54d0, type: 3}
 --- !u!195 &780243428667188758
 NavMeshAgent:
   m_ObjectHideFlags: 0
