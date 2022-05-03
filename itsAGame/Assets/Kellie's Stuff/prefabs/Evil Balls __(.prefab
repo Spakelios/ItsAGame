@@ -156,7 +156,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13bfbb0a96cca1c438badb8435479d29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 3494107593540914114, guid: e3a6ed29939d3024a9a16c7aef685216, type: 3}
+  Exit: {x: 32.56, y: 3.75, z: 277.2}
   Agent: {fileID: 780243428667188758}
 --- !u!195 &780243428667188758
 NavMeshAgent:
@@ -168,7 +168,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 100
+  m_Speed: 20
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -187,7 +187,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1767449651834845337}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9e5bc112ec82a3c4eb72e1b1cf7245f5, type: 3}
   m_Name: 

@@ -8,5 +8,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
+  - enabled: 1
+    path: Assets/Kellie's Stuff/Scenes/battlefield.unity
+    guid: 0f98bca0063f36e458fb9ec72f881def
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: f1f1dadcdbf1d41459ca20e10502ea66, type: 2}

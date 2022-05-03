@@ -5,12 +5,12 @@ using UnityEngine.AI;
 
 public class AI : MonoBehaviour
 {
-    public Transform player;
+    public Vector3 Exit;
     public NavMeshAgent Agent;
     
     void Start()
     {
-        Agent.SetDestination(player.position);
+        Agent.SetDestination(Exit);
     }
 
 }
