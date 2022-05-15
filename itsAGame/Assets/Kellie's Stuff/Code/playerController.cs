@@ -23,7 +23,7 @@ public class playerController : MonoBehaviour
 
     private void Start()
     {
-        controller = gameObject.AddComponent<CharacterController>();
+        controller = GetComponent<CharacterController>();
         playerInput = GetComponent<PlayerInput>();
         moveAction = playerInput.actions["Move"];
         JumpAction = playerInput.actions["Jump"];
@@ -41,10 +41,10 @@ public class playerController : MonoBehaviour
         Vector3 move = new Vector3(Input.x, 0, Input.y);
         controller.Move(move * Time.deltaTime * playerSpeed);
 
-        if (move != Vector3.zero)
-        {
-            gameObject.transform.forward = move;
-        }
+        // if (move != Vector3.zero)
+        // {
+        //     gameObject.transform.forward = move;
+        // }
 
         // Changes the height position of the player..
         if (JumpAction.triggered && groundedPlayer)

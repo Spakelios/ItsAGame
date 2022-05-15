@@ -23,12 +23,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6551314279934472194}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.84, y: -0.31, z: 0.88}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.6903906, z: -0, w: 0.7234369}
+  m_LocalPosition: {x: 0.49691895, y: 0.19777988, z: 0.80190825}
+  m_LocalScale: {x: 3.7752733, y: 2.472248, z: 1.1044548}
   m_Children: []
-  m_Father: {fileID: 6551314281742011077}
-  m_RootOrder: 3
+  m_Father: {fileID: 6551314280835040052}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6551314280037335433
 GameObject:
@@ -58,7 +58,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6551314281742011077}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 15.023, y: 0.004, z: 0.003}
 --- !u!1 &6551314280456335679
 GameObject:
@@ -91,7 +91,7 @@ Transform:
   m_LocalScale: {x: 1.7994897, y: 0.555702, z: 1}
   m_Children: []
   m_Father: {fileID: 6551314280835040052}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 89.572}
 --- !u!33 &6551314280456335674
 MeshFilter:
@@ -186,6 +186,7 @@ Transform:
   m_LocalPosition: {x: -0.65, y: -0.39, z: 0.42}
   m_LocalScale: {x: 0.9068283, y: 0.40449014, z: 0.26347706}
   m_Children:
+  - {fileID: 6551314279934472195}
   - {fileID: 6551314280456335675}
   m_Father: {fileID: 6551314281742011077}
   m_RootOrder: 2
@@ -447,7 +448,6 @@ Transform:
   - {fileID: 6551314281318504003}
   - {fileID: 6551314281603671638}
   - {fileID: 6551314280835040052}
-  - {fileID: 6551314279934472195}
   - {fileID: 6551314280037335434}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -615,7 +615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9642ded633c31214488db7b009bde6c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minX: 0
-  maxX: 0
-  minY: 186
-  maxY: -20
+  turn: {x: 0, y: 0}
+  sensitivity: 0.5
+  deltaMove: {x: 0, y: 0, z: 0}
+  speed: 1

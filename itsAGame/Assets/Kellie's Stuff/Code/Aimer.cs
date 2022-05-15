@@ -19,7 +19,7 @@ public class Aimer : MonoBehaviour
     void Update()
     {
         turn.x += Input.GetAxis("Mouse X") * sensitivity;
-        turn.y += Input.GetAxis("Mouse Y") * sensitivity;
+        // turn.y += Input.GetAxis("Mouse Y") * sensitivity;
         transform.localRotation = Quaternion.Euler(-turn.y, turn.x, 0);
     }
 }
