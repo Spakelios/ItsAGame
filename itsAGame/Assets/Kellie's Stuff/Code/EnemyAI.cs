@@ -6,7 +6,7 @@ using UnityEngine.AI;
 public class EnemyAI : MonoBehaviour
 {
     public NavMeshAgent agent;
-    public Transform launchOffset;
+    public GameObject eBullet;
     public Transform player;
     public LayerMask whatIsGround, whatIsPlayer;
     public Transform target;
@@ -15,7 +15,8 @@ public class EnemyAI : MonoBehaviour
     public float timeBetweenAttacks;
     bool alreadyAttacked;
     public GameObject projectile;
-
+    private Rigidbody rb;
+    
     //States
     public float sightRange, attackRange;
     public bool playerInSightRange, playerInAttackRange;
@@ -24,6 +25,7 @@ public class EnemyAI : MonoBehaviour
     {
         player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
+        rb = gameObject.GetComponent<Rigidbody>();
     }
 
     private void Update()
@@ -56,13 +58,10 @@ public class EnemyAI : MonoBehaviour
 
         if (!alreadyAttacked)
         {
-            transform.LookAt(player);
-            Instantiate(projectile, launchOffset.position, transform.rotation);
-
-            alreadyAttacked = true;
-            Invoke(nameof(ResetAttack), timeBetweenAttacks);
+      
         }
     }
+    
     private void ResetAttack()
     {
         alreadyAttacked = false;

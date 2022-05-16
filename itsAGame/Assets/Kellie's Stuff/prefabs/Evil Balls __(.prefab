@@ -202,7 +202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 780243428667188758}
-  launchOffset: {fileID: 4259473240561160293}
+  eBullet: {fileID: 8793547123078645721, guid: 0f24245e250fae241a1aca04573d54d0, type: 3}
   player: {fileID: 3494107593540914114, guid: e3a6ed29939d3024a9a16c7aef685216, type: 3}
   whatIsGround:
     serializedVersion: 2

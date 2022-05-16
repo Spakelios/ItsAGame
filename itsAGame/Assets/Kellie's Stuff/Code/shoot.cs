@@ -12,6 +12,7 @@ public class shoot : MonoBehaviour
 
     public float speed;
     public Vector3 targetPosition;
+    
     private void OnMouseDown()
     {
         Instantiate(bullet);
@@ -30,6 +31,7 @@ public class shoot : MonoBehaviour
         {
             Instantiate(ProjectilePrefab, launchOffset.position, transform.rotation);
         }
+        
 
     }
 }

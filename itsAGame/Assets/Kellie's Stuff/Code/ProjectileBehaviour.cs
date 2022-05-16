@@ -17,7 +17,7 @@ public class ProjectileBehaviour : MonoBehaviour
 
     IEnumerator vanish()
     {
-        yield return new WaitForSeconds(1f); 
+        yield return new WaitForSeconds(5f); 
         Destroy(prefab);
     }
 }
