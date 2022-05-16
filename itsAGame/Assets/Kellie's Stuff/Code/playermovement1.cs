@@ -6,6 +6,7 @@ using System.Collections.Specialized;
 using System.Security.Cryptography;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class playermovement1 : MonoBehaviour
 {
@@ -56,6 +57,16 @@ public class playermovement1 : MonoBehaviour
 
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            speed = 60;
+            Debug.Log("pressy");
+        }
+        else 
+        {
+            speed = 30;
         }
     }
 }

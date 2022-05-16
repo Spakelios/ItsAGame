@@ -7,6 +7,6 @@ public class buttons : MonoBehaviour
 {
     public void cringe()
     {
-        SceneManager.LoadScene("battlefield");
+        SceneManager.LoadScene("new");
     }
 }
