@@ -7,25 +7,18 @@ using UnityEngine.InputSystem;
 public class AOE : MonoBehaviour
 {
     public ParticleSystem particleSystem;
-    
+
+    public GameObject aoe;
     public void Update()
     {
         if (Input.GetMouseButton(1))
         {
+            aoe.SetActive(true);
             particleSystem.Play();
-            CheckForDestruction();
         }
-    }
-
-    public void CheckForDestruction()
-    {
-        Collider[] colliders = Physics.OverlapSphere(transform.position, 4f);
-        foreach (Collider c in colliders)
+        else
         {
-            if (c.CompareTag("enemy"))
-            {
-                Destroy(c.gameObject);
-            }
+            aoe.SetActive(false);
         }
     }
 }
