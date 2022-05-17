@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
-  public GameObject RoundOne, RoundTwo, RoundThree, RoundFour;
+  public GameObject RoundOne, RoundTwo, RoundThree, RoundFour, textOne, TextThree, TextTwo, TextFour;
 
   private void Start()
   {
@@ -15,29 +15,33 @@ public class SpawnManager : MonoBehaviour
   IEnumerator Round1()
   {
     RoundOne.SetActive(true);
+    textOne.SetActive(true);
     yield return new WaitForSeconds(10f);
     StartCoroutine("Round2");
   }
 
   IEnumerator Round2()
   {
-    RoundOne.SetActive(false);
     RoundTwo.SetActive(true);
-    yield return new WaitForSeconds(10f);
+    textOne.SetActive(false);
+    TextTwo.SetActive(true);
+    yield return new WaitForSeconds(8f);
     StartCoroutine("Round3");
   }
 
   IEnumerator Round3()
-  { 
-    RoundTwo.SetActive(false);
+  {
+    TextTwo.SetActive(false);
+    TextThree.SetActive(true);
     RoundThree.SetActive(true);
-    yield return new WaitForSeconds(10f);
+    yield return new WaitForSeconds(7f);
     Round4();
   }
   
   private void Round4()
-  { 
-    RoundThree.SetActive(false);
+  {
+    TextThree.SetActive(false);
+    TextFour.SetActive(true);
     RoundFour.SetActive(true);
   }
   

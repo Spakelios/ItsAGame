@@ -59,14 +59,5 @@ public class playermovement1 : MonoBehaviour
             controller.Move(moveDir.normalized * speed * Time.deltaTime);
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-        {
-            speed = 60;
-            Debug.Log("pressy");
-        }
-        else 
-        {
-            speed = 30;
-        }
     }
 }

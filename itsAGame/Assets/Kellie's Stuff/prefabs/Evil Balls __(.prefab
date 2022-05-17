@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 6769974322989401601}
   - component: {fileID: 939590846402534111}
   - component: {fileID: 780243428667188758}
-  - component: {fileID: 896224823982908327}
   m_Layer: 0
   m_Name: Evil Balls __(
   m_TagString: enemy
@@ -177,7 +176,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 26
+  m_Speed: 50
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -189,34 +188,6 @@ NavMeshAgent:
   m_BaseOffset: 0.49999997
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &896224823982908327
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1767449651834845337}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9e5bc112ec82a3c4eb72e1b1cf7245f5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 780243428667188758}
-  eBullet: {fileID: 8793547123078645721, guid: 0f24245e250fae241a1aca04573d54d0, type: 3}
-  player: {fileID: 3494107593540914114, guid: e3a6ed29939d3024a9a16c7aef685216, type: 3}
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 8
-  whatIsPlayer:
-    serializedVersion: 2
-    m_Bits: 1
-  target: {fileID: 3701588730894771468, guid: 2bf7ea120c64fdd49bbda1a37926afd2, type: 3}
-  timeBetweenAttacks: 5
-  projectile: {fileID: 8793547123078645721, guid: 0f24245e250fae241a1aca04573d54d0, type: 3}
-  sightRange: 150
-  attackRange: 100
-  playerInSightRange: 0
-  playerInAttackRange: 0
 --- !u!1 &2603470178169189806
 GameObject:
   m_ObjectHideFlags: 0
