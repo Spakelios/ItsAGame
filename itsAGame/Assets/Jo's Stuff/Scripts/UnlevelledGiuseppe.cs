@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
-using UnityEditor.UI;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Timeline;
@@ -14,7 +13,7 @@ public class UnlevelledGiuseppe : MonoBehaviour
     public GameObject healthPack;
     public HealthPack hpPack;
     public NavMeshAgent giuseppe;
-    public static int numberKills;
+    public int numberKills;
     public int numberHeals;
 
     public GameObject angy;
@@ -63,7 +62,7 @@ public class UnlevelledGiuseppe : MonoBehaviour
             Idle();
         }
 
-        if (numberKills + numberHeals == 15)
+        if (numberKills + numberHeals == 5)
         {
             if (numberKills > numberHeals)
             {
@@ -99,6 +98,7 @@ public class UnlevelledGiuseppe : MonoBehaviour
     public void Heal()
     {
         fightCheck = false;
+        enemyDetect.SetActive(false);
         concern.SetActive(true);
         angy.SetActive(false);
 
@@ -132,7 +132,7 @@ public class UnlevelledGiuseppe : MonoBehaviour
         }
 
         if (enemy && fightCheck)
-        {
+        { 
             enemyDetect.SetActive(true);
             AOE.Play();
         }

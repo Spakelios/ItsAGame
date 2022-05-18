@@ -1273,6 +1273,14 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 1380899858, guid: 0e927e6c2b624ad4592e8f60d2e4383b, type: 3}
+      propertyPath: unlevelledGiuseppe
+      value: 
+      objectReference: {fileID: 623583598}
+    - target: {fileID: 1380899858, guid: 0e927e6c2b624ad4592e8f60d2e4383b, type: 3}
+      propertyPath: _unlevelledGiuseppe
+      value: 
+      objectReference: {fileID: 623583598}
     - target: {fileID: 1438112031, guid: 0e927e6c2b624ad4592e8f60d2e4383b, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -2558,6 +2566,14 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 1380899858, guid: 0e927e6c2b624ad4592e8f60d2e4383b, type: 3}
+      propertyPath: unlevelledGiuseppe
+      value: 
+      objectReference: {fileID: 856503405}
+    - target: {fileID: 1380899858, guid: 0e927e6c2b624ad4592e8f60d2e4383b, type: 3}
+      propertyPath: _unlevelledGiuseppe
+      value: 
+      objectReference: {fileID: 856503405}
     - target: {fileID: 1438112031, guid: 0e927e6c2b624ad4592e8f60d2e4383b, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -9814,6 +9830,7 @@ MonoBehaviour:
   gameOver: {fileID: 852908}
   fails: {fileID: 996443119}
   hpPack: {fileID: 1079432097}
+  playerStats: {fileID: 0}
 --- !u!1 &1400174307 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4901592279571056404, guid: 0e927e6c2b624ad4592e8f60d2e4383b, type: 3}
@@ -14085,6 +14102,14 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: 1380899858, guid: 0e927e6c2b624ad4592e8f60d2e4383b, type: 3}
+      propertyPath: unlevelledGiuseppe
+      value: 
+      objectReference: {fileID: 1462812276}
+    - target: {fileID: 1380899858, guid: 0e927e6c2b624ad4592e8f60d2e4383b, type: 3}
+      propertyPath: _unlevelledGiuseppe
+      value: 
+      objectReference: {fileID: 1462812276}
     - target: {fileID: 1438112030, guid: 0e927e6c2b624ad4592e8f60d2e4383b, type: 3}
       propertyPath: m_IsActive
       value: 0

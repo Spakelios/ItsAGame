@@ -5,12 +5,13 @@ using UnityEngine;
 
 public class DealDamage : MonoBehaviour
 {
+    public UnlevelledGiuseppe unlevelledGiuseppe;
     private void OnTriggerEnter(Collider other)
     {
         if(other.CompareTag("enemy"))
         {
             Destroy(other.gameObject);
-            UnlevelledGiuseppe.numberKills++;
+            unlevelledGiuseppe.numberKills += 1;
         }
 }
 }
