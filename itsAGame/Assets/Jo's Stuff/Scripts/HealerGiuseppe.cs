@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class HealerGiuseppe : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public UnlevelledGiuseppe babyGiuseppe;
+    
+    public Transform player;
+    public GameObject healthPack;
+    public HealthPack hpPack;
+    public NavMeshAgent giuseppe;
+    public GameObject concern;
+    public bool healerMode;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        babyGiuseppe.enabled = false;
+        healerMode = true;
     }
 }

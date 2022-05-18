@@ -8,16 +8,31 @@ public class PlayerStats : MonoBehaviour
 {
     public TextMeshProUGUI hpCount;
     public int hp;
-    void Start()
+    public int hpCap;
+    public HealthPack hpPack;
+
+    private void Update()
     {
         hpCount.text = "HP: " + hp;
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("ball"))
+        if (other.CompareTag("enemy"))
         {
-            hp -= 1;
+            hp--;
+            Destroy(other.gameObject);
+        }
+        
+        else if (other.tag == "Friend")
+        {
+            if (hpPack.packGot && hp < hpCap)
+            {
+                hp++;
+                hpPack.packGot = false;
+                hpPack.healthPack.SetActive(false);
+
+            }
         }
     }
 }

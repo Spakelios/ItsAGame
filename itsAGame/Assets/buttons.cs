@@ -15,12 +15,12 @@ public class buttons : MonoBehaviour
     
         public void fightButton()
         {
-            giuseppePriority.Fight();
+            giuseppePriority.fighterMode = true;
         }
     
         public void healButton()
         {
-            giuseppePriority.Heal();
+            giuseppePriority.healerMode = true;
         }
 
         public void OnApplicationQuit()

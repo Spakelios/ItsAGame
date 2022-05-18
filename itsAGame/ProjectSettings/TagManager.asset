@@ -8,6 +8,7 @@ TagManager:
   - Health
   - Friend
   - ball
+  - Based
   layers:
   - Default
   - TransparentFX
