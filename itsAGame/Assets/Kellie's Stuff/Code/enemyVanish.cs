@@ -25,6 +25,13 @@ public class enemyVanish : MonoBehaviour
             hpPack.packGot = false;
             hpPack.healthPack.SetActive(false);
         }
+        
+        else if (other.CompareTag("HealerFriend") && hpPack.packGot)
+        {
+            enemypassed += 2;
+            hpPack.packGot = false;
+            hpPack.healthPack.SetActive(false);
+        }
     }
 
     public void Update()

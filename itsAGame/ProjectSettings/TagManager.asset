@@ -9,6 +9,9 @@ TagManager:
   - Friend
   - ball
   - Based
+  - FighterFriend
+  - HealerFriend
+  - BalancedFriend
   layers:
   - Default
   - TransparentFX

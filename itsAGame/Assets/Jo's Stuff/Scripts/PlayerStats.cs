@@ -20,7 +20,7 @@ public class PlayerStats : MonoBehaviour
     {
         if (other.CompareTag("enemy"))
         {
-            hp--;
+            hp-= 1;
             Destroy(other.gameObject);
         }
         
@@ -28,7 +28,18 @@ public class PlayerStats : MonoBehaviour
         {
             if (hpPack.packGot && hp < hpCap)
             {
-                hp++;
+                hp += 1;
+                hpPack.packGot = false;
+                hpPack.healthPack.SetActive(false);
+
+            }
+        }
+        
+        else if (other.tag == "HealerFriend")
+        {
+            if (hpPack.packGot && hp < hpCap)
+            {
+                hp+= 2;
                 hpPack.packGot = false;
                 hpPack.healthPack.SetActive(false);
 

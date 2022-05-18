@@ -7820,6 +7820,11 @@ Transform:
   m_Father: {fileID: 1921364124}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 1.262, y: 180, z: -0.86}
+--- !u!1 &946023784 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4901592279335657399, guid: 0e927e6c2b624ad4592e8f60d2e4383b, type: 3}
+  m_PrefabInstance: {fileID: 4901592279612605359}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &971379768 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5010614066447101623, guid: 2e376bb06fafaa4429e79bade254797a, type: 3}
@@ -11590,6 +11595,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2129365692}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!195 &2146796010 stripped
+NavMeshAgent:
+  m_CorrespondingSourceObject: {fileID: 4901592280060959472, guid: 0e927e6c2b624ad4592e8f60d2e4383b, type: 3}
+  m_PrefabInstance: {fileID: 4901592279612605359}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4901592279612605359
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11624,6 +11634,10 @@ PrefabInstance:
     - target: {fileID: 4901592280060959472, guid: 0e927e6c2b624ad4592e8f60d2e4383b, type: 3}
       propertyPath: m_Speed
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4901592280060959472, guid: 0e927e6c2b624ad4592e8f60d2e4383b, type: 3}
+      propertyPath: m_StoppingDistance
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4901592280060959475, guid: 0e927e6c2b624ad4592e8f60d2e4383b, type: 3}
       propertyPath: m_RootOrder
@@ -11673,6 +11687,30 @@ PrefabInstance:
       propertyPath: m_Name
       value: Giuseppe
       objectReference: {fileID: 0}
+    - target: {fileID: 6347432578254597007, guid: 0e927e6c2b624ad4592e8f60d2e4383b, type: 3}
+      propertyPath: hpPack
+      value: 
+      objectReference: {fileID: 183616506}
+    - target: {fileID: 6347432578254597007, guid: 0e927e6c2b624ad4592e8f60d2e4383b, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 587311431}
+    - target: {fileID: 6347432578254597007, guid: 0e927e6c2b624ad4592e8f60d2e4383b, type: 3}
+      propertyPath: concern
+      value: 
+      objectReference: {fileID: 946023784}
+    - target: {fileID: 6347432578254597007, guid: 0e927e6c2b624ad4592e8f60d2e4383b, type: 3}
+      propertyPath: theBase
+      value: 
+      objectReference: {fileID: 1579465776}
+    - target: {fileID: 6347432578254597007, guid: 0e927e6c2b624ad4592e8f60d2e4383b, type: 3}
+      propertyPath: giuseppe
+      value: 
+      objectReference: {fileID: 2146796010}
+    - target: {fileID: 6347432578254597007, guid: 0e927e6c2b624ad4592e8f60d2e4383b, type: 3}
+      propertyPath: healthPack
+      value: 
+      objectReference: {fileID: 183616501}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e927e6c2b624ad4592e8f60d2e4383b, type: 3}
 --- !u!1001 &5647402163899932584

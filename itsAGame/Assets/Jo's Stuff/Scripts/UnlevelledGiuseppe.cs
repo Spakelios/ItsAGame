@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.UI;
@@ -119,5 +120,12 @@ public class UnlevelledGiuseppe : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Based") && hpPack.packGot || other.CompareTag("Player") && hpPack.packGot)
+        {
+            numberHeals += 1;
+        }
+    }
 }
 

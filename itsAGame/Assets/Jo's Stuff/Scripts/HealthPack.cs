@@ -21,5 +21,11 @@ public class HealthPack : MonoBehaviour
             packGot = true;
             healthPack.SetActive(true);
         }
+        
+        else if (other.CompareTag("HealerFriend"))
+        {
+            packGot = true;
+            healthPack.SetActive(true);
+        }
     }
 }
