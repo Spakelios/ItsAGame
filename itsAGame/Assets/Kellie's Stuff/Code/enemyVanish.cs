@@ -11,6 +11,7 @@ public class enemyVanish : MonoBehaviour
     public GameObject gameOver;
     public TextMeshProUGUI fails;
     public HealthPack hpPack;
+    public PlayerStats playerStats;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("enemy"))
@@ -38,7 +39,7 @@ public class enemyVanish : MonoBehaviour
     {
         fails.text = " " + enemypassed;
 
-        if (enemypassed <= 0)
+        if (enemypassed <= 0 || playerStats.hp <= 0)
         {
             gameOver.SetActive(true);
         }

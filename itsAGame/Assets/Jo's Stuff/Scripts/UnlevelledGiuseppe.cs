@@ -13,7 +13,6 @@ public class UnlevelledGiuseppe : MonoBehaviour
     public GameObject enemy;
     public GameObject healthPack;
     public HealthPack hpPack;
-    private GameObject[] enemies; //gonna change the enemy gameobject to an array but later
     public NavMeshAgent giuseppe;
     public static int numberKills;
     public int numberHeals;
@@ -23,7 +22,6 @@ public class UnlevelledGiuseppe : MonoBehaviour
 
     public FighterGiuseppe fighterLevel;
     public HealerGiuseppe healerLevel;
-    public BalancedGiuseppe balancedLevel;
 
     private PlayerStats playerStats;
     private enemyVanish baseHP;
@@ -35,15 +33,17 @@ public class UnlevelledGiuseppe : MonoBehaviour
     public GameObject enemyDetect;
     public ParticleSystem AOE;
 
+    public GameObject stateButtons;
+
     private void Start()
     {
         angy.SetActive(false);
         concern.SetActive(false);
         fighterLevel.enabled = false;
         healerLevel.enabled = false;
-        balancedLevel.enabled = false;
         playerStats = GameObject.FindWithTag("Player").GetComponent<PlayerStats>();
         baseHP = GameObject.FindWithTag("Based").GetComponent<enemyVanish>();
+        stateButtons.SetActive(true);
     }
 
     private void FixedUpdate()
@@ -63,7 +63,7 @@ public class UnlevelledGiuseppe : MonoBehaviour
             Idle();
         }
 
-        if (numberKills + numberHeals == 6)
+        if (numberKills + numberHeals == 15)
         {
             if (numberKills > numberHeals)
             {
@@ -73,11 +73,6 @@ public class UnlevelledGiuseppe : MonoBehaviour
             else if (numberKills < numberHeals)
             {
                 healerLevel.enabled = true;
-            }
-
-            else if (numberKills == numberHeals)
-            {
-                balancedLevel.enabled = true;
             }
         }
     }
@@ -103,6 +98,7 @@ public class UnlevelledGiuseppe : MonoBehaviour
     public bool fightCheck;
     public void Heal()
     {
+        fightCheck = false;
         concern.SetActive(true);
         angy.SetActive(false);
 

@@ -18,10 +18,14 @@ public class HealerGiuseppe : MonoBehaviour
     private PlayerStats playerStats;
     private enemyVanish baseHP;
     public Transform theBase;
+    public GameObject stateButtons;
+    public GameObject healerText;
     
 
     private void Start()
     {
+        stateButtons.SetActive(false);
+        healerText.SetActive(true);
         babyGiuseppe.enabled = false;
         concern.SetActive(true);
         gameObject.tag = "HealerFriend";
