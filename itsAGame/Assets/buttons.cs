@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,5 +21,10 @@ public class buttons : MonoBehaviour
         public void healButton()
         {
             giuseppePriority.Heal();
+        }
+
+        public void OnApplicationQuit()
+        { 
+            Application.Quit();
         }
 }
