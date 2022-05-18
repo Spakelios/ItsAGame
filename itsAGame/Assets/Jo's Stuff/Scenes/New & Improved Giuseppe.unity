@@ -485,6 +485,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthPack: {fileID: 1438112030}
+  giuseppe: {fileID: 853436879}
   packGot: 0
 --- !u!54 &183616507
 Rigidbody:
@@ -7490,6 +7491,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 587311431}
+  enemy: {fileID: 0}
+  healthPack: {fileID: 183616501}
+  hpPack: {fileID: 183616506}
   giuseppe: {fileID: 853436880}
   numberKills: 0
   numberHeals: 0
@@ -7498,6 +7502,7 @@ MonoBehaviour:
   balancedGiuseppe: 0
   angy: {fileID: 808599131}
   concern: {fileID: 931273752}
+  healerMode: 0
 --- !u!195 &853436880 stripped
 NavMeshAgent:
   m_CorrespondingSourceObject: {fileID: 4901592280060959472, guid: 0e927e6c2b624ad4592e8f60d2e4383b, type: 3}
@@ -9429,7 +9434,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1546710221
 MonoBehaviour:
   m_ObjectHideFlags: 0

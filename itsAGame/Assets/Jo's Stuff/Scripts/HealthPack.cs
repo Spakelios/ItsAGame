@@ -6,6 +6,7 @@ using UnityEngine;
 public class HealthPack : MonoBehaviour
 {
     public GameObject healthPack;
+    public UnlevelledGiuseppe giuseppe;
     public bool packGot;
 
     private void Start()
@@ -15,7 +16,7 @@ public class HealthPack : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Friend"))
+        if (other.CompareTag("Friend") && giuseppe.healerMode)
         {
             packGot = true;
             healthPack.SetActive(true);
