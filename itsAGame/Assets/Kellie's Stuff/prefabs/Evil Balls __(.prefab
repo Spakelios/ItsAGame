@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 898015411779047452}
   - component: {fileID: 79190067373735306}
   - component: {fileID: 7271016301073317949}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -107,7 +107,7 @@ GameObject:
   - component: {fileID: 448130361880353809}
   - component: {fileID: 6664617300613506695}
   - component: {fileID: 586227699064251773}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -207,7 +207,7 @@ GameObject:
   - component: {fileID: 6769974322989401601}
   - component: {fileID: 939590846402534111}
   - component: {fileID: 780243428667188758}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Evil Balls __(
   m_TagString: enemy
   m_Icon: {fileID: 0}
@@ -297,8 +297,8 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Radius: 1.4362909
+  m_Center: {x: 0, y: 0, z: 0.07038527}
 --- !u!114 &6775031274009207274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -372,7 +372,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 50
+  m_Speed: 30
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -396,7 +396,7 @@ GameObject:
   - component: {fileID: 5847851676626930586}
   - component: {fileID: 3660151983912520809}
   - component: {fileID: 2681757252936323748}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -491,7 +491,7 @@ GameObject:
   - component: {fileID: 1308389353421378976}
   - component: {fileID: 8817879670225681045}
   - component: {fileID: 1666646777551106488}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -583,7 +583,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4259473240561160293}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: offset
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -616,7 +616,7 @@ GameObject:
   - component: {fileID: 8779007966874806959}
   - component: {fileID: 4671986669351008574}
   - component: {fileID: 966544732520294528}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -710,7 +710,7 @@ GameObject:
   - component: {fileID: 1832453771482848170}
   - component: {fileID: 3907078671968111314}
   - component: {fileID: 7519821697644990804}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Particle System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5515,7 +5515,7 @@ GameObject:
   - component: {fileID: 3978797018349845687}
   - component: {fileID: 3695905471263007593}
   - component: {fileID: 5262187952599159811}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5610,7 +5610,7 @@ GameObject:
   - component: {fileID: 2008523836104425126}
   - component: {fileID: 372680739102774521}
   - component: {fileID: 4237415932296415015}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Sphere (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

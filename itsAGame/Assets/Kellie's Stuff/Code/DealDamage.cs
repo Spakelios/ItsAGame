@@ -10,6 +10,7 @@ public class DealDamage : MonoBehaviour
         if(other.CompareTag("enemy"))
         {
             Destroy(other.gameObject);
+            UnlevelledGiuseppe.numberKills++;
         }
 }
 }
