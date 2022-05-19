@@ -71,6 +71,7 @@ public class UnlevelledGiuseppe : MonoBehaviour
 
             else if (numberKills < numberHeals)
             {
+                Destroy(enemyDetect);
                 healerLevel.enabled = true;
             }
         }
