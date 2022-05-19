@@ -15,8 +15,8 @@ public class HealerGiuseppe : MonoBehaviour
     
     public GameObject concern;
 
-    private PlayerStats playerStats;
-    private enemyVanish baseHP;
+    public PlayerStats playerStats;
+    public enemyVanish baseHP;
     public Transform theBase;
     public GameObject stateButtons;
     public GameObject healerText;
@@ -30,8 +30,9 @@ public class HealerGiuseppe : MonoBehaviour
         concern.SetActive(true);
         gameObject.tag = "HealerFriend";
         giuseppe.speed = 20;
-        playerStats = GameObject.FindWithTag("Player").GetComponent<PlayerStats>();
-        baseHP = GameObject.FindWithTag("Based").GetComponent<enemyVanish>();
+        giuseppe.acceleration = 20;
+        //playerStats = GameObject.FindWithTag("Player").GetComponent<PlayerStats>();
+        //baseHP = GameObject.FindWithTag("Based").GetComponent<enemyVanish>();
     }
 
     private void FixedUpdate()

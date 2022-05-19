@@ -22,8 +22,8 @@ public class UnlevelledGiuseppe : MonoBehaviour
     public FighterGiuseppe fighterLevel;
     public HealerGiuseppe healerLevel;
 
-    private PlayerStats playerStats;
-    private enemyVanish baseHP;
+    public PlayerStats playerStats;
+    public enemyVanish baseHP;
     public Transform theBase;
 
     public bool fighterMode;
@@ -40,8 +40,8 @@ public class UnlevelledGiuseppe : MonoBehaviour
         concern.SetActive(false);
         fighterLevel.enabled = false;
         healerLevel.enabled = false;
-        playerStats = GameObject.FindWithTag("Player").GetComponent<PlayerStats>();
-        baseHP = GameObject.FindWithTag("Based").GetComponent<enemyVanish>();
+        //playerStats = GameObject.FindWithTag("Player").GetComponent<PlayerStats>();
+        //baseHP = GameObject.FindWithTag("Based").GetComponent<enemyVanish>();
         stateButtons.SetActive(true);
     }
 
@@ -62,7 +62,7 @@ public class UnlevelledGiuseppe : MonoBehaviour
             Idle();
         }
 
-        if (numberKills + numberHeals == 5)
+        if (numberKills + numberHeals >= 5)
         {
             if (numberKills > numberHeals)
             {
@@ -84,6 +84,7 @@ public class UnlevelledGiuseppe : MonoBehaviour
 
     public void Fight()
     {
+        healerMode = false;
         angy.SetActive(true);
         enemy = GameObject.FindGameObjectWithTag("enemy");
         
@@ -97,6 +98,7 @@ public class UnlevelledGiuseppe : MonoBehaviour
     public bool fightCheck;
     public void Heal()
     {
+        fighterMode = false;
         fightCheck = false;
         enemyDetect.SetActive(false);
         concern.SetActive(true);
@@ -128,7 +130,7 @@ public class UnlevelledGiuseppe : MonoBehaviour
     {
         if (other.CompareTag("Based") && hpPack.packGot || other.CompareTag("Player") && hpPack.packGot)
         {
-            numberHeals += 1;
+            numberHeals ++;
         }
 
         if (enemy && fightCheck)

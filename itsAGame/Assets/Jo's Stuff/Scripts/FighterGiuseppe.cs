@@ -30,6 +30,7 @@ public class FighterGiuseppe : MonoBehaviour
         concern.SetActive(false);
         gameObject.tag = "FighterFriend";
         giuseppe.speed = 20;
+        giuseppe.acceleration = 20;
     }
 
     private void OnTriggerEnter(Collider other)
